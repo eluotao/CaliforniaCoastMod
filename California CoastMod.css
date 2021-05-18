@@ -6241,6 +6241,12 @@ html .embedded-note-titles .CodeMirror-lines {
   height: 1.75em;
 }
 
+.view-action[aria-label*="解除同步"] {
+  content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/UnlockLink.svg');
+  width: 1.75em;
+  height: 1.75em;
+}
+
 /* 右侧操作区按钮 */
 
 .workspace-tab-header[aria-label*="Tables"] {
@@ -6293,6 +6299,25 @@ html .embedded-note-titles .CodeMirror-lines {
 
 .workspace-tab-header[aria-label*="Calendar"] {
   content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/calendar.svg');
+  width: 1.75em;
+  height: 1.75em;
+}
+
+
+.workspace-tab-header[aria-label*="Todo List"]{
+  content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/to-do-list.svg');
+  width: 2em;
+  height: 2em;
+}
+
+.workspace-tab-header[aria-label*="关系图"]{
+  content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/TheChain.svg');
+  width: 1.75em;
+  height: 1.75em;
+}
+
+.workspace-tab-header[aria-label*="关系图谱"]{
+  content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/Guanxi.svg');
   width: 1.75em;
   height: 1.75em;
 }
@@ -6413,7 +6438,11 @@ html .embedded-note-titles .CodeMirror-lines {
   height: 2em;
 }
 
-
+.graph-controls-button[aria-label*="设置"] {
+  content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/Options.svg');
+  width: 2.5em;
+  height: 2.5em;
+}
 
 
 
@@ -6639,4 +6668,13 @@ ul>li:before{
 
 .markdown-preview-view li.is-collapsed, .markdown-preview-view .markdown-preview-section > div.is-collapsed > *{
   background-image: inherit !important;
+}
+
+.nav-folder-children .nav-file {
+  /* padding: 0 10px;
+  margin-left: 0; */
+
+  /* 修改 */
+  padding: 0 0px !important;
+  margin-left: -15px !important;
 }
