@@ -10,13 +10,17 @@ settings:
         level: 3
     - 
         id: folder-icon
-        title: 🗂 文件夹图标
+        title: 
+🗂
+ 文件夹图标
         description: 左侧文件夹列表中文件夹前面的图标
         type: variable-text
         default: 'https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/folders.svg'
     - 
         id: file-icon
-        title: 📄 文件图标
+        title: 
+📄
+ 文件图标
         description: 左侧文件夹列表中文件前面的图标
         type: variable-text
         default: 'https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/bxs-file-md.svg'
@@ -6563,32 +6567,32 @@ pre[class*='language-txt']:before{
   font-family: var(--mono-font),var(--cjk-font);
 }
 
-.theme-light .token.keyword{
+.theme-dark .token.keyword,.theme-light .token.keyword{
   color: #3b78e7 !important;
   font-weight: 600;
 }
 
-.theme-light .function{
+.theme-dark .function,.theme-light .function{
   color: #9c27b0 !important;
 }
 
-.theme-light .number{
+.theme-dark .number,.theme-light .number{
   color: #d81b60 !important;
 }
 
-.theme-light .builtin{
+.theme-dark .builtin,.theme-light .builtin{
   color: #e36209 !important;
 }
 
-.theme-light .operator{
+.theme-light .operator,.theme-light .punctuation{
   color: rgb(0, 0, 0) !important;
 }
 
-.theme-light .punctuation{
-  color: rgb(0, 0, 0) !important;
+.theme-dark .operator,.theme-dark .punctuation{
+  color: rgb(228, 220, 220) !important;
 }
 
-.theme-light .comment{
+.theme-dark .comment,.theme-light .comment{
   font-size: 0.9em !important;
   font-weight: 450;
 }
@@ -6598,34 +6602,68 @@ pre[class*='language-txt']:before{
 }
 
 /* 无需列表层级线 */
-ul li {
-  list-style:none;
-  position: relative;
-}
 
-ul>li:before{
-  content: ' ';
-  width: 7px;
-  height: 7px;
-  margin-top: -2px;
-  margin-right: 10px;
-  margin-bottom: 3px;
-  display: inline-block;
-  background: rgb(73, 136, 253,1);
+.markdown-preview-view li > .collapse-indicator:before{
+  margin-top: 1px;
+  margin-left: 19px;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: var(--text-accent);
   border-radius: 20px;
 }
 
-.is-readable-line-width .markdown-preview-section > div ul{
-  font-size: 20px;
+.markdown-preview-view li.is-collapsed .collapse-indicator:before{
+  content: "　" !important;
+  background: rgb(255, 153, 0);
+}
+.CodeMirror-foldgutter-open:after{
+  margin-top: 10px;
+}
+.CodeMirror-foldgutter-folded:after{
+  margin-top: 10px;
+  color:rgb(255, 153, 0);
+}
+.CodeMirror-foldmarker:after{
+  display: none;
+}
+
+
+h1 div.heading-collapse-indicator.collapse-indicator::before, h2 div.heading-collapse-indicator.collapse-indicator::before,h3 div.heading-collapse-indicator.collapse-indicator::before {
+    content: "\e9ac";
+    position: absolute;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: -4px;
+    /* margin-top: -6px; */
+    color: var(--text-accent);
+    transition: transform 10ms linear 0s;
+}
+
+.markdown-preview-view .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+    /* content: "↓"; */
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 2px;
+    font-weight: bold;
+    color: var(--text-accent);
+    transition: transform 10ms linear 0s;
+}
+
+
+.markdown-preview-view .is-collapsed .collapse-indicator:before{
+  color: rgb(255, 153, 0);
 }
 
 .markdown-preview-sizer .cm-hmd-list-indent .cm-tab, ul ul { position: relative; }
+
 .markdown-preview-sizer .cm-hmd-list-indent .cm-tab::before, ul ul::before {
     content:'';
-    margin-left: -2px;
-    border-left: 2px dotted #4988FD;
+    margin-left: -21px;
+    border-left: 2px dotted var(--text-accent);
     position: absolute;
 }
+
 .markdown-preview-sizer .cm-hmd-list-indent .cm-tab::before {
   content:'';
   left: 0;
@@ -6640,30 +6678,10 @@ ul>li:before{
 }
 
 .outliner-plugin-bls .cm-s-obsidian span.cm-formatting-list-ul:before{
-  margin-top: -2px !important;
-  margin-left: -7px !important;
-  font-size: 50px !important;
+  margin-top: -1px !important;
+  margin-left: -4px !important;
+  font-size: 25px !important;
   color: initial !important;
-}
-
-.markdown-preview-view li > .collapse-indicator:before{
-  margin-top: 2px;
-  margin-left: 26px;
-  content: '';
-  width: 10px;
-  height: 10px;
-  background: rgb(73, 136, 253,1);
-  border-radius: 20px;
-}
-
-.markdown-preview-view .collapse-indicator:before, .CodeMirror-foldgutter-open:after{
-  margin-top: 13px;
-} 
-
-.markdown-preview-view .is-collapsed .collapse-indicator:before, .CodeMirror-foldgutter-folded:after{
-  content: '' !important;
-  background: rgb(255, 153, 0);
-  
 }
 
 .markdown-preview-view li.is-collapsed, .markdown-preview-view .markdown-preview-section > div.is-collapsed > *{
@@ -6671,10 +6689,65 @@ ul>li:before{
 }
 
 .nav-folder-children .nav-file {
-  /* padding: 0 10px;
-  margin-left: 0; */
-
   /* 修改 */
   padding: 0 0px !important;
   margin-left: -15px !important;
+}
+
+
+
+/* 大纲样式 */
+
+.outline .tree-item .collapse-icon::before {
+    margin-top: 1px;
+    margin-left: 3px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: var(--text-accent);
+    border-radius: 20px;
+}
+
+.outline .tree-item-children {
+    margin-left: 12px;
+    border-left: 2px solid rgba(0, 122, 223, 0.5);
+    border-radius: 0px;
+    transition: all 300ms ease-in-out;
+}
+
+.outline .is-clickable .collapse-icon:after, .outline .is-clickable .collapse-icon:hover:after{
+  content: '' !important;
+}
+
+.outline .is-collapsed .collapse-icon:after, .outline .is-collapsed .collapse-icon:hover:after{
+  content: '' !important;
+}
+
+.outline .tree-item.is-collapsed .collapse-icon::after{
+  margin-left: -10px;
+  margin-top: 1px;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: var(--text-accent);
+  border-radius: 20px;
+  background-color: rgb(255, 153, 0);
+}
+
+.tree-item-inner{
+  color: var(--text-muted);
+}
+
+.nav-file-title.is-being-dragged, body:not(.is-grabbing) .nav-file-title:hover{
+  background-color: var(--shade-3);
+}
+
+
+/* 背景图 */
+body.theme-light{
+  background-image: url(https://cdn.jsdelivr.net/gh/eluotao/static@master/pic/pic_BigSurGraphic-10.png);
+}
+
+body.theme-dark{
+  background-image: url(https://cdn.jsdelivr.net/gh/eluotao/static@master/pic/pic_BigSurGraphic-20.png);
 }
