@@ -6110,7 +6110,7 @@ html .embedded-note-titles .CodeMirror-lines {
 .nav-folder-children .nav-file-title-content:first-child::before { 
   content: var(--file-icon);
   padding-left: 46px;
-  vertical-align: -0.425em;
+  vertical-align: -0.325em;
   text-indent: -0.2cm;
 }
 
@@ -6424,6 +6424,24 @@ html .embedded-note-titles .CodeMirror-lines {
   height: 1.5em;
 }
 
+.side-dock-ribbon-action[aria-label*="创建新的 ZK 卡片"] {
+  content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/Card-20-1.svg');
+  width: 1.75em;
+  height: 1.75em;
+}
+
+.side-dock-ribbon-action[aria-label*="发布更改"] {
+  content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/Release-20.svg');
+  width: 1.55em;
+  height: 1.55em;
+}
+
+.side-dock-ribbon-action[aria-label*="录音"] {
+  content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/luyin-20.svg');
+  width: 1.75em;
+  height: 1.75em;
+}
+
 .side-dock-ribbon-action[aria-label*="帮助"] {
   content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/Bangzhu.svg');
   width: 2em;
@@ -6447,6 +6465,14 @@ html .embedded-note-titles .CodeMirror-lines {
   width: 2.5em;
   height: 2.5em;
 }
+
+/* 附件图标 */
+.nav-file-title-content:before{
+  padding-left: 42px;
+  content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/image-16.svg');
+  vertical-align: -0.125em;
+}
+
 
 
 
@@ -6659,7 +6685,7 @@ h1 div.heading-collapse-indicator.collapse-indicator::before, h2 div.heading-col
 
 .markdown-preview-sizer .cm-hmd-list-indent .cm-tab::before, ul ul::before {
     content:'';
-    margin-left: -21px;
+    margin-left: -20px;
     border-left: 2px dotted var(--text-accent);
     position: absolute;
 }
