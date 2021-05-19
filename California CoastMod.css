@@ -6107,9 +6107,9 @@ html .embedded-note-titles .CodeMirror-lines {
 
 
 /* 图标设置 */
-.nav-folder-children .nav-file-title-content:first-child::before { 
+.nav-folder .nav-folder-children .nav-file-title-content:first-child::before { 
   content: var(--file-icon);
-  padding-left: 46px;
+  /* padding-left: 46px; */
   vertical-align: -0.325em;
   text-indent: -0.2cm;
 }
@@ -6225,6 +6225,12 @@ html .embedded-note-titles .CodeMirror-lines {
   content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/Preview.svg');
   width: 1.75em;
   height: 1.75em;
+}
+
+.view-action[aria-label*="锁定"] {
+  content: url('https://cdn.jsdelivr.net/gh/eluotao/static@master/Obsidian/Fixed-20.svg');
+  width: 1.55em;
+  height: 1.55em;
 }
 
 .view-action[aria-label*="编辑"] {
