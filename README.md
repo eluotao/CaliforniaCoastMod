@@ -19,6 +19,7 @@ California Coast 是一款很棒的主题配色，本人很喜欢，但有些代
 
 ## 配色器
 
+
 > 配色器：https://ob-theme.feeluo.com/ 用了就会很喜欢的
 
 
@@ -26,9 +27,11 @@ California Coast 是一款很棒的主题配色，本人很喜欢，但有些代
 
 
 ## 图标来源
-    图标来自以下两个网站：
-    - https://www.iconfont.cn/
-    - https://iconify.design/
+
+来自以下两个网站：
+
+- https://www.iconfont.cn/
+- https://iconify.design/
 
 
 
