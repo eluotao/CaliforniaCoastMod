@@ -25,7 +25,13 @@ California Coast 是一款很棒的主题配色，本人很喜欢，但有些代
 
 选择自己喜欢的颜色，复制 `rgb` 颜色即可马上生成你想要的配色主题;
 
+**操作步骤**
 
+![操作步骤](images/theme-css.gif)
+
+**复制 css**
+
+![复制css](images/theme-copy.gif)
 ## 图标来源
 
 来自以下两个网站：
