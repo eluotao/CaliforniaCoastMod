@@ -5,6 +5,17 @@ California Coast 是一款很棒的主题配色，本人很喜欢，但有些代
 
 只是想把 `Obsidian` 作为一款得力助手，打造的漂亮点，用起来心情舒畅一些，毕竟要记录的东西那么多，每天都要看到，对吧。
 
+##  主题截图
+
+截图一
+![截图一](images/theme-res3.png)
+
+截图二
+![截图二](images/theme-res1.png)
+
+截图二
+![截图三](images/theme-res2.png)
+
 ## 特性
 
 - 全部 CSS 编写
@@ -38,12 +49,6 @@ California Coast 是一款很棒的主题配色，本人很喜欢，但有些代
 
 - https://www.iconfont.cn/
 - https://iconify.design/
-
-
-
-
-## 截图
-
 
 # 来源
 原始地址：[obsidian-california-coast-theme](https://github.com/mgmeyers/obsidian-california-coast-theme)

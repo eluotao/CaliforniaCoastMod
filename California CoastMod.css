@@ -67,7 +67,7 @@ settings:
     -
         id: scale-small
         title: 页面预览比例
-        description: Percentage amount to scale hover preview and sidebar document fonts
+        description: Percentage amount to scale hover preview and sidebar document font
         type: variable-number
         default: 90
 
@@ -89,13 +89,13 @@ settings:
         type: variable-text
         default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
     -
-        id: editor-fonts-features
+        id: editor-font-features
         title: 正文字体功能
         description: eg. "ss01", "cv05", "cv07", "case"
         type: variable-text
         default: ""
     -
-        id: fonts-monospace
+        id: font-monospace
         title: 等宽字体
         description: Used for code blocks, front matter, etc
         type: variable-text
@@ -131,12 +131,12 @@ settings:
     -
         id: line-width
         title: 行宽
-        description: The maximum line width in rem units (1rem = Body fonts size)
+        description: The maximum line width in rem units (1rem = Body font size)
         type: variable-number
         default: 70
         format: rem
     -
-        id: editor-fonts-size
+        id: editor-font-size
         title: 主体字体大小
         description: Font size in px of the main text
         type: variable-number
@@ -157,8 +157,8 @@ settings:
         collapsed: true
     -
         id: h1-size
-        title: H1 fonts size
-        description: Accepts any CSS fonts-size value
+        title: H1 font size
+        description: Accepts any CSS font-size value
         type: variable-text
         default: 2.25em
     -
@@ -181,14 +181,14 @@ settings:
         default: 1
     -
         id: h1-weight
-        title: H1 fonts weight
-        description: Accepts numbers represeting the CSS fonts-weight
+        title: H1 font weight
+        description: Accepts numbers represeting the CSS font-weight
         type: variable-number
         default: 500
     -
         id: h1-style
-        title: H1 fonts style
-        description: Accepts any CSS fonts-style value
+        title: H1 font style
+        description: Accepts any CSS font-style value
         type: variable-text
         default: normal
     -
@@ -205,8 +205,8 @@ settings:
         collapsed: true
     -
         id: h2-size
-        title: H2 fonts size
-        description: Accepts any CSS fonts-size value
+        title: H2 font size
+        description: Accepts any CSS font-size value
         type: variable-text
         default: 1.75em
     -
@@ -229,14 +229,14 @@ settings:
         default: 0.5
     -
         id: h2-weight
-        title: H2 fonts weight
-        description: Accepts numbers represeting the CSS fonts-weight
+        title: H2 font weight
+        description: Accepts numbers represeting the CSS font-weight
         type: variable-number
         default: 600
     -
         id: h2-style
-        title: H2 fonts style
-        description: Accepts any CSS fonts-style value
+        title: H2 font style
+        description: Accepts any CSS font-style value
         type: variable-text
         default: normal
 
@@ -248,8 +248,8 @@ settings:
         collapsed: true
     -
         id: h3-size
-        title: H3 fonts size
-        description: Accepts any CSS fonts-size value
+        title: H3 font size
+        description: Accepts any CSS font-size value
         type: variable-text
         default: 1.266em
     -
@@ -272,14 +272,14 @@ settings:
         default: 0.5
     -
         id: h3-weight
-        title: H3 fonts weight
-        description: Accepts numbers represeting the CSS fonts-weight
+        title: H3 font weight
+        description: Accepts numbers represeting the CSS font-weight
         type: variable-number
         default: 500
     -
         id: h3-style
-        title: H3 fonts style
-        description: Accepts any CSS fonts-style value
+        title: H3 font style
+        description: Accepts any CSS font-style value
         type: variable-text
         default: normal
 
@@ -291,8 +291,8 @@ settings:
         collapsed: true
     -
         id: h4-size
-        title: H4 fonts size
-        description: Accepts any CSS fonts-size value
+        title: H4 font size
+        description: Accepts any CSS font-size value
         type: variable-text
         default: 1.125em
     -
@@ -315,14 +315,14 @@ settings:
         default: 0.5
     -
         id: h4-weight
-        title: H4 fonts weight
-        description: Accepts numbers represeting the CSS fonts-weight
+        title: H4 font weight
+        description: Accepts numbers represeting the CSS font-weight
         type: variable-number
         default: 500
     -
         id: h4-style
-        title: H4 fonts style
-        description: Accepts any CSS fonts-style value
+        title: H4 font style
+        description: Accepts any CSS font-style value
         type: variable-text
         default: normal
 
@@ -334,8 +334,8 @@ settings:
         collapsed: true
     -
         id: h5-size
-        title: H5 fonts size
-        description: Accepts any CSS fonts-size value
+        title: H5 font size
+        description: Accepts any CSS font-size value
         type: variable-text
         default: 1em
     -
@@ -358,14 +358,14 @@ settings:
         default: 0.5
     -
         id: h5-weight
-        title: H5 fonts weight
-        description: Accepts numbers represeting the CSS fonts-weight
+        title: H5 font weight
+        description: Accepts numbers represeting the CSS font-weight
         type: variable-number
         default: 500
     -
         id: h5-style
-        title: H5 fonts style
-        description: Accepts any CSS fonts-style value
+        title: H5 font style
+        description: Accepts any CSS font-style value
         type: variable-text
         default: normal
 
@@ -377,8 +377,8 @@ settings:
         collapsed: true
     -
         id: h6-size
-        title: H6 fonts size
-        description: Accepts any CSS fonts-size value
+        title: H6 font size
+        description: Accepts any CSS font-size value
         type: variable-text
         default: 1em
     -
@@ -401,14 +401,14 @@ settings:
         default: 0.5
     -
         id: h6-weight
-        title: H6 fonts weight
-        description: Accepts numbers represeting the CSS fonts-weight
+        title: H6 font weight
+        description: Accepts numbers represeting the CSS font-weight
         type: variable-number
         default: 500
     -
         id: h6-style
-        title: H6 fonts style
-        description: Accepts any CSS fonts-style value
+        title: H6 font style
+        description: Accepts any CSS font-style value
         type: variable-text
         default: italic
 
@@ -589,7 +589,28 @@ settings:
     --icon-Settings: url('https://ob-theme.feeluo.com/icon/Settings.svg?r=rgba(66,133,244,1)&w=28&h=28');
 
     /* 其他未知图标 */
-    --icon-Other: url('https://ob-theme.feeluo.com/icon/File-outlined.svg?r=rgba(66,133,244,1)&w=24&h=24');
+    /* --icon-Other: url('https://ob-theme.feeluo.com/icon/File-outlined.svg?r=rgba(66,133,244,1)&w=24&h=24'); */
+
+    /* Vantage - Advanced search builder 图标 */
+    --icon-AdvancedSearch: url('https://ob-theme.feeluo.com/icon/AdvancedSearch.svg?r=rgba(66,133,244,1)&w=24&h=24');
+
+    /* Review flashcards 图标 */
+    --icon-ReviewFlash: url('https://ob-theme.feeluo.com/icon/ReviewFlash.svg?r=rgba(66,133,244,1)&w=22&h=22');
+
+    /* Toggle Privacy Glasses 图标 */
+    --icon-Glasses: url('https://ob-theme.feeluo.com/icon/Glasses.svg?r=rgba(66,133,244,1)&w=22&h=22');
+
+    /* Juggl global graph 图标 */
+    --icon-AdvancedAtlas: url('https://ob-theme.feeluo.com/icon/AdvancedAtlas.svg?r=rgba(66,133,244,1)&w=20&h=20');
+
+    /* Juggl nodes 图标 */
+    --icon-Nodes: url('https://ob-theme.feeluo.com/icon/Nodes.svg?r=rgba(66,133,244,1)&w=24&h=24');
+
+    /* Daily Stats 图标 */
+    --icon-DailyStats: url('https://ob-theme.feeluo.com/icon/DailyStats.svg?r=rgba(66,133,244,1)&w=24&h=24');
+
+    /* JugStyle 图标 */
+    --icon-JugglStyle: url('https://ob-theme.feeluo.com/icon/JugglStyle.svg?r=rgba(66,133,244,1)&w=24&h=24');
 
     /* 背景图片 */
     --light-bg-img: url(https://cdn.jsdelivr.net/gh/eluotao/static@master/pic/pic_BigSurGraphic-10.png);
@@ -611,7 +632,7 @@ settings:
     Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --text-editor: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --fonts-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace; */
+  --font-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace; */
 
 
     /* Typora 拷贝字体样式 */
@@ -629,7 +650,7 @@ settings:
   Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
     /* --text-editor: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --fonts-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace; */
+  --font-monospace: Menlo, SFMono-Regular, Consolas, "Roboto Mono", monospace; */
 
     /* Sizes, weights, padding */
 
@@ -6078,7 +6099,7 @@ body {
 
 .markdown-preview-section blockquote {
     position: relative;
-    /*fonts-style: italic;*/
+    /*font-style: italic;*/
     /*border-radius: unset;*/
     /*border: unset;*/
     /*border-width: unset;*/
@@ -6218,7 +6239,7 @@ p code {
     /*border-left: 4px solid var(--accent);*/
     /*border-radius: 0.3rem;*/
     /*padding: 1rem;*/
-    /*fonts-style:initial !important;*/
+    /*font-style:initial !important;*/
 }
 
 .theme-dark .markdown-preview-section blockquote:before {
@@ -6837,6 +6858,30 @@ html .embedded-note-titles .CodeMirror-lines {
     height: var(--icon-Size-2);
 }
 
+.workspace-tab-header[aria-label*="Notes Review Queue"] {
+    content: var(--icon-ReviewFlash);
+    width: var(--icon-Size-2);
+    height: var(--icon-Size-2);
+}
+
+.workspace-tab-header[aria-label*="Juggl nodes"] {
+    content: var(--icon-Nodes);
+    width: var(--icon-Size-2);
+    height: var(--icon-Size-2);
+}
+
+.workspace-tab-header[aria-label*="Daily Stats"] {
+    content: var(--icon-DailyStats);
+    width: var(--icon-Size-2);
+    height: var(--icon-Size-2);
+}
+
+.workspace-tab-header[aria-label*="Juggl style"] {
+    content: var(--icon-JugglStyle);
+    width: var(--icon-Size-2);
+    height: var(--icon-Size-2);
+}
+
 .nav-action-button[aria-label*="排序"] {
     content: var(--icon-Sort);
 }
@@ -6929,6 +6974,29 @@ html .embedded-note-titles .CodeMirror-lines {
     content: var(--icon-Settings);
     margin-left: -3px;
 }
+
+.side-dock-ribbon-action[aria-label*="Toggle Privacy Glasses"] {
+    content: var(--icon-Glasses);
+    margin-left: -3px;
+}
+
+.side-dock-ribbon-action[aria-label*="Juggl global graph"] {
+    content: var(--icon-AdvancedAtlas);
+    margin-left: -3px;
+}
+
+.side-dock-ribbon-action[aria-label*="Review flashcards"]{
+    content: var(--icon-ReviewFlash);
+    margin-left: -3px;
+}
+
+.side-dock-ribbon-action[aria-label*="Advanced search builder"] {
+    content: var(--icon-AdvancedSearch);
+    margin-left: -3px;
+}
+
+
+
 
 /* 关系图谱 设置 */
 .graph-controls-button[aria-label*="设置"] {
@@ -7100,7 +7168,7 @@ pre[class*='language-txt']:before {
 
 /* CSS */
 .token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted{
-    /*fonts-weight: bold;*/
+    /*font-weight: bold;*/
 }
 
 .theme-light .property{
@@ -7177,12 +7245,13 @@ pre[class*='language-txt']:before {
     background: var(--accent); /* 新版 */
 }
 
+/* 编辑模式 折叠图标位置 */
 .CodeMirror-foldgutter-open:after {
-    margin-top: 10px;
+    margin-top: 2px;
 }
 
 .CodeMirror-foldgutter-folded:after {
-    margin-top: 10px;
+    margin-top: 2px;
     color: rgb(255, 153, 0);
 }
 
@@ -7205,7 +7274,7 @@ h1 div.heading-collapse-indicator.collapse-indicator::before, h2 div.heading-col
 .markdown-preview-view .list-collapse-indicator.collapse-indicator.collapse-icon::before {
     /* content: "↓"; */
     font-size: 14px;
-    margin-left: 25px;
+    margin-left: 24px;
     margin-top: 2px;
     font-weight: bold;
     color: var(--text-accent);
@@ -7252,7 +7321,7 @@ ul ul::before{
     /* 老版 */
     /*margin-top: -1px !important;*/
     /*margin-left: -4px !important;*/
-    /*fonts-size: 25px !important;*/
+    /*font-size: 25px !important;*/
     /*color: initial !important;*/
 
     margin-top: -1px !important;
