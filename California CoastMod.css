@@ -612,6 +612,9 @@ settings:
     /* JugStyle 图标 */
     --icon-JugglStyle: url('https://ob-theme.feeluo.com/icon/JugglStyle.svg?r=rgba(66,133,244,1)&w=24&h=24');
 
+    /* Create a new drawing in Excalidraw 图标 */
+    --icon-Excalidraw: url('https://ob-theme.feeluo.com/icon/Excalidraw.svg?r=rgba(66,133,244,1)&w=20&h=20');
+
     /* 背景图片 */
     --light-bg-img: url(https://cdn.jsdelivr.net/gh/eluotao/static@master/pic/pic_BigSurGraphic-10.png);
 
@@ -6882,6 +6885,12 @@ html .embedded-note-titles .CodeMirror-lines {
     height: var(--icon-Size-2);
 }
 
+.workspace-tab-header[aria-label*="Drawing"] {
+    content: var(--icon-Excalidraw);
+    width: var(--icon-Size-2);
+    height: var(--icon-Size-2);
+}
+
 .nav-action-button[aria-label*="排序"] {
     content: var(--icon-Sort);
 }
@@ -6995,7 +7004,9 @@ html .embedded-note-titles .CodeMirror-lines {
     margin-left: -3px;
 }
 
-
+.side-dock-ribbon-action[aria-label*="Excalidraw"] {
+    content: var(--icon-Excalidraw);
+}
 
 
 /* 关系图谱 设置 */
