@@ -52,3 +52,6 @@ California Coast 是一款很棒的主题配色，本人很喜欢，但有些代
 
 # 来源
 原始地址：[obsidian-california-coast-theme](https://github.com/mgmeyers/obsidian-california-coast-theme)
+
+# License
+gochat is licensed under the MIT License.
